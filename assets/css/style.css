@@ -1,0 +1,187 @@
+/*Estilos index.html*/
+.center {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li {
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#menu li a:hover {
+    color: grey;
+}
+
+.espacamento {
+    padding: 30px;
+}
+
+.tamanho {
+    width: 560px;
+    height: 315px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+/* Ícones */
+.social-links a img {
+    width: 45px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-links a img:hover {
+    transform: scale(1.2) rotate(10deg);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+/* Crédito */
+.credit {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+    .social-links {
+        gap: 15px;
+    }
+
+    .social-links a img {
+        width: 35px;
+    }
+
+    .credit {
+        font-size: 12px;
+    }
+}
+
+
+/*Estilos contato*/
+
+/* 1. Estilo geral do formulário */
+#formulario {
+    max-width: 500px;
+    /* Largura máxima do formulário */
+    margin: 40px auto;
+    /* Centraliza na página */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    font-family: Arial, sans-serif;
+    /* Fonte */
+}
+
+/* 2. Labels e spans de erro */
+#formulario label {
+    display: block;
+    /* Força o label ocupar uma linha inteira */
+    margin-bottom: 5px;
+    /* Espaço abaixo do label */
+    font-weight: bold;
+    /* Negrito */
+}
+
+#formulario span {
+    display: block;
+    /* Ocupa linha inteira */
+    color: red;
+    /* Cor do erro */
+    font-size: 12px;
+    /* Pequeno */
+    margin-bottom: 10px;
+}
+
+/* 3. Inputs e textarea */
+#formulario input,
+#formulario textarea {
+    display: block;
+    /* Empilha verticalmente */
+    width: 100%;
+    /* Ocupa toda largura disponível */
+    padding: 10px;
+    /* Espaçamento interno */
+    margin-bottom: 15px;
+    /* Espaço entre campos */
+    border: 1px solid #ccc;
+    /* Borda cinza */
+    border-radius: 8px;
+    /* Borda arredondada */
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* Suave ao focar */
+}
+
+/* 4. Efeito de foco */
+
+#formulario input:focus,
+#formulario textarea:focus {
+    border-color: #4CAF50;
+    /* Verde */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+    /* Remove contorno padrão */
+}
+
+/* 5. Botão */
+#formulario button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#formulario button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    /* Leve aumento ao passar o mouse */
+}
+
+/* 6. Responsivo (telas pequenas) */
+@media (max-width: 500px) {
+    #formulario {
+        padding: 15px;
+        /* Reduz padding em telas pequenas */
+    }
+
+    #formulario button {
+        width: 100%;
+        /* Botão ocupa toda largura */
+    }
+}

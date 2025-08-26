@@ -9,6 +9,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
 
         <!-- Menu de Navegaçāo -->
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
@@ -32,64 +33,92 @@
         <section id="about">
 
             <!-- Titulo da Seçāo -->
-            <h2>Sobre o Felipe:</h2>
+            <h2 class="center">Sobre o Felipe:</h2>
             <article>
+                <div class="container">
 
-                <img src="assets/img/user_01.svg" width="300" height="200" alt="Foto do criador deste conteúdo" />
+                    <div class="espacamento">
+                        <img class="tamanho espacamento" src="assets/img/user_01.svg"
+                            alt="Foto do criador deste conteúdo" />
+                    </div>
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente modi beatae optio excepturi
-                    consequatur
-                    adipisci distinctio maiores, rem velit fugiat ab deserunt minus. Mollitia adipisci omnis velit eum
-                    ad
-                    magnam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odio dignissimos quis
-                    odit voluptates alias dicta.
-                    Numquam eveniet nisi nostrum similique officiis nam reiciendis ad aspernatur possimus ullam.
-                    Delectus, voluptate.
-                </p>
+                    <div class="espacamento">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente modi beatae optio
+                            excepturi
+                            consequatur
+                            adipisci distinctio maiores, rem velit fugiat ab deserunt minus. Mollitia adipisci omnis
+                            velit eum
+                            ad
+                            magnam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odio dignissimos
+                            quis
+                            odit voluptates alias dicta.
+                            Numquam eveniet nisi nostrum similique officiis nam reiciendis ad aspernatur possimus ullam.
+                            Delectus, voluptate.
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente modi beatae optio
+                            excepturi
+                            consequatur
+                            adipisci distinctio maiores, rem velit fugiat ab deserunt minus. Mollitia adipisci omnis
+                            velit eum
+                            ad
+                            magnam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odio dignissimos
+                            quis
+                            odit voluptates alias dicta.
+                            Numquam eveniet nisi nostrum similique officiis nam reiciendis ad aspernatur possimus ullam.
+                            Delectus, voluptate.
+                        </p>
+
+                    </div>
+                </div>
+
+
             </article>
         </section>
 
         <!--Seçāo Video -->
         <section id="video">
 
-            <h2>Meu vídeo favorito:</h2>
+            <h2 class="center">Meu vídeo favorito:</h2>
 
             <figure>
-                <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/GLHc9XN31gk?si=b4t_cqzeHH-tatTa"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
+                <div class="container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GLHc9XN31gk?si=b4t_cqzeHH-tatTa"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
             </figure>
 
         </section>
     </main>
+
     <!-- Rodapé da Página (footer) -->
     <footer>
+        <section class="social-links">
 
-        <section>
-
-            <a href="">
+            <a href="" aria-label="Linkedin">
                 <img src="assets/img/linkedin.svg" alt="Linkedin" />
             </a>
 
-            <a href="">
+            <a href="" aria-label="Github">
                 <img src="assets/img/github.svg" alt="Github" />
             </a>
 
-            <a href="">
+            <a href="" aria-label="Instagram">
                 <img src="assets/img/instagram.svg" alt="Instagram" />
             </a>
         </section>
 
-        <h3> 
+        <h3 class="credit">
             Feito com &#x1F49A; por Felipe - Aluno Generation Brasil/2025
         </h3>
     </footer>
+
 </body>
 
 </html>

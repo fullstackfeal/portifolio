@@ -9,6 +9,8 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -21,7 +23,7 @@
 
         <!-- Menu de Navegação -->
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
@@ -32,12 +34,92 @@
     <!-- Seção Principal da Página (main) -->
     <main>
 
+        <!-- Seção do Formulario -->
+        <form action="#" method="submit" id="formulario">
 
-        <!-- Seção Principal da Página (main) -->
-        <main>
+            <!-- Bloco 1: Nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+            <span id="errNome"></span>
 
-            <!-- Seção do Formulário -->
-            <form action="#" method="submit" id="formulario">
+            <!-- Bloco 2: E-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" />
+            <span id="errEmail"></span>
+
+            <!-- Bloco 3: Assunto -->
+            <label for="subject">Assunto:</label>
+            <input type="text" id="subject" name="subject" placeholder="Digite o assunto da mensagem" />
+            <span id="errSubject"></span>
+
+            <!-- Bloco 4: Mensagem -->
+            <label for="mensage">Mensagem:</label>
+            <textarea id="mensage" name="mensage" placeholder="Digite sua mensagem"></textarea>
+
+            <!-- Bloco 5: Botão -->
+            <button type="submit">Enviar</button>
+
+        </form>
+        <!-- Seção do Google Maps -->
+        <article>
+
+            <!-- Seção do Google Maps -->
+            <article>
+
+                <h2 class="center">Endereço:</h2>
+                <address>
+                    <p class="center">Av. Paulista, 100 | São Paulo - SP</p>
+                </address>
+
+                <div class="container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390548535577!3d-23.
+                        564611167596592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.
+                        %20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1594056507065!5m2!1spt-BR!2sbr"
+                        width="400" height="250" frameborder="0" style="border: 0" allowfullscreen=""
+                        aria-hidden="false" tabindex="0" id="mapa">
+                    </iframe>
+                </div>
+
+            </article>
+        </article>
+
+    </main>
+
+
+    </main>
+
+    <!-- Seção de Contato - Redes Sociais-->
+    <footer>
+        <section class="social-links">
+
+            <a href="" aria-label="Linkedin">
+                <img src="assets/img/linkedin.svg" alt="Linkedin" />
+            </a>
+
+            <a href="" aria-label="Github">
+                <img src="assets/img/github.svg" alt="Github" />
+            </a>
+
+            <a href="" aria-label="Instagram">
+                <img src="assets/img/instagram.svg" alt="Instagram" />
+            </a>
+        </section>
+
+        <h3 class="credit">
+            Feito com &#x1F49A; por Felipe - Aluno Generation Brasil/2025
+        </h3>
+    </footer>
+
+</body>
+
+</html>
+
+
+<!-- <h2>Endereço:</h2>
+
+               Seção do Formulário
+               <form action="#" method="submit" id="formulario">
 
                 <label for="nome"> Nome: </label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
@@ -57,65 +139,6 @@
                 <button type="submit"> Enviar </button>
             </form>
 
-            <!-- Seção do Google Maps -->
-            <article>
-
-                <!-- Seção do Google Maps -->
-                <article>
-
-                    <address>
-                        <p>Av. Paulista, 100</p>
-                        <p>São Paulo - SP</p>
-                    </address>
-
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390548535577!3d-23.
-                        564611167596592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.
-                        %20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1594056507065!5m2!1spt-BR!2sbr"
-                        width="400" height="250" frameborder="0" style="border: 0" allowfullscreen=""
-                        aria-hidden="false" tabindex="0" id="mapa">
-                    </iframe>
-
-                </article>
-            </article>
-
-        </main>
-
-
-    </main>
-
-    <!-- Rodapé da Página (footer) -->
-    <footer>
-
-        <!-- Seção de Contato - Redes Sociais-->
-        <section>
-
-            <a href="">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-            </a>
-
-            <a href="">
-                <img src="assets/img/github.svg" alt="Github" />
-            </a>
-
-            <a href="">
-                <img src="assets/img/instagram.svg" alt="Instagram" />
-            </a>
-
-        </section>
-
-        <h3>
-            Feito com &#x1F49A; por Felipe - Aluno Generation Brasil/2025
-        </h3>
-
-    </footer>
-
-</body>
-
-</html>
-
-
-    <!-- <h2>Endereço:</h2>
 
     <p>Rua Vergueiro, 1000</p>
     <p>Liberdade, Sāo Paulo - SP</p>
